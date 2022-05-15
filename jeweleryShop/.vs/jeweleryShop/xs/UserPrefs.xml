@@ -1,0 +1,36 @@
+﻿<Properties StartupConfiguration="{51D80A9C-430A-4932-93DD-28CDBDCB5D20}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="jeweleryShop/Controllers/ProductsController.cs">
+    <Files>
+      <File FileName="jeweleryShop/Program.cs" Line="16" Column="1" />
+      <File FileName="jeweleryShop/Startup.cs" Line="22" Column="58" />
+      <File FileName="jeweleryShop/Data/Models/Category.cs" Line="12" Column="22" />
+      <File FileName="jeweleryShop/Data/Models/Jewelery.cs" Line="6" Column="9" />
+      <File FileName="jeweleryShop/Data/Models/Product.cs" Line="18" Column="20" />
+      <File FileName="jeweleryShop/Data/Interfaces/ICategory.cs" Line="10" Column="6" />
+      <File FileName="jeweleryShop/Data/Mocks/MockCategory.cs" Line="19" Column="99" />
+      <File FileName="jeweleryShop/Data/Mocks/MockProducts.cs" Line="74" Column="260" />
+      <File FileName="jeweleryShop/Data/Interfaces/IProducts.cs" Line="9" Column="43" />
+      <File FileName="jeweleryShop/Controllers/ProductsController.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="jeweleryShop" expanded="True">
+            <Node name="jeweleryShop" expanded="True">
+              <Node name="Controllers" expanded="True">
+                <Node name="ProductsController.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.jeweleryShop PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
