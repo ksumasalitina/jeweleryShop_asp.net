@@ -1,24 +1,28 @@
 ﻿<Properties StartupConfiguration="{51D80A9C-430A-4932-93DD-28CDBDCB5D20}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="jeweleryShop/Controllers/ProductsController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="jeweleryShop/wwwroot/css/style.css">
     <Files>
       <File FileName="jeweleryShop/Program.cs" Line="16" Column="1" />
-      <File FileName="jeweleryShop/Startup.cs" Line="22" Column="58" />
-      <File FileName="jeweleryShop/Data/Models/Category.cs" Line="12" Column="22" />
-      <File FileName="jeweleryShop/Data/Models/Jewelery.cs" Line="6" Column="9" />
-      <File FileName="jeweleryShop/Data/Models/Product.cs" Line="18" Column="20" />
-      <File FileName="jeweleryShop/Data/Interfaces/ICategory.cs" Line="10" Column="6" />
-      <File FileName="jeweleryShop/Data/Mocks/MockCategory.cs" Line="19" Column="99" />
-      <File FileName="jeweleryShop/Data/Mocks/MockProducts.cs" Line="74" Column="260" />
-      <File FileName="jeweleryShop/Data/Interfaces/IProducts.cs" Line="9" Column="43" />
-      <File FileName="jeweleryShop/Controllers/ProductsController.cs" Line="1" Column="1" />
+      <File FileName="jeweleryShop/Startup.cs" Line="28" Column="10" />
+      <File FileName="jeweleryShop/Views/Products/Catalog.cshtml" Line="4" Column="1" />
+      <File FileName="jeweleryShop/Controllers/ProductsController.cs" Line="24" Column="48" />
+      <File FileName="jeweleryShop/ViewModels/ProductCatalogViewModel.cs" Line="10" Column="38" />
+      <File FileName="jeweleryShop/Views/Shared/_Layout.cshtml" Line="8" Column="221" />
+      <File FileName="jeweleryShop/Views/_ViewStart.cshtml" Line="4" Column="1" />
+      <File FileName="jeweleryShop/Views/_ViewImports.cshtml" Line="1" Column="31" />
+      <File FileName="jeweleryShop/wwwroot/css/style.css" Line="2" Column="9" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="jeweleryShop" expanded="True">
             <Node name="jeweleryShop" expanded="True">
-              <Node name="Controllers" expanded="True">
-                <Node name="ProductsController.cs" selected="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Shared" expanded="True" />
+              </Node>
+              <Node name="wwwroot" expanded="True">
+                <Node name="css" expanded="True">
+                  <Node name="style.css" selected="True" />
+                </Node>
               </Node>
             </Node>
           </Node>

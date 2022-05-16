@@ -20,7 +20,11 @@ namespace jeweleryShop
         {
             services.AddTransient<IProducts, MockProducts>();
             services.AddTransient<ICategory, MockCategory>();
-            services.AddMvc();
+            services.AddMvc(mvcOtions => {
+                mvcOtions.EnableEndpointRouting = false;
+            });
+
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using jeweleryShop.Data.Interfaces;
+using jeweleryShop.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 
 namespace jeweleryShop.Controllers
@@ -20,8 +21,11 @@ namespace jeweleryShop.Controllers
 
         public ViewResult Catalog()
         {
-            var prods = _allProducts.AllProducts;
-            return View(prods);
+            ViewBag.Title = "Jewelery catalog";
+            ProductCatalogViewModel obj = new ProductCatalogViewModel();
+            obj.AllProducts = _allProducts.AllProducts;
+            obj.currCategory = "mg[rb";
+            return View(obj);
         }
     }
 }
