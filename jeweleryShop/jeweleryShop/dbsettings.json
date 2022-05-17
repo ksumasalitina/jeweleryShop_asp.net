@@ -1,0 +1,5 @@
+﻿{
+  "ConnectionStrings": {
+    "DefaultConnection": "Server=tcp:localhost,1433;Initial Catalog=jewShop;User ID=SA;Password=Strong.Pwd-123;"
+  }
+}

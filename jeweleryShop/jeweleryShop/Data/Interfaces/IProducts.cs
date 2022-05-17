@@ -8,7 +8,7 @@ namespace jeweleryShop.Data.Interfaces
     {
         IEnumerable<Product> AllProducts { get; }
 
-        IEnumerable<Product> getPopulars { get; set; }
+        IEnumerable<Product> getPopulars { get; }
 
         Product getProduct(int productID);
 
