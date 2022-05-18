@@ -1,0 +1,17 @@
+﻿@model HomeViewModel
+
+    <h1>Популярные товары</h1>
+    <div class="album py-5 bg-light">
+        <div class="container">
+
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                @{
+                    foreach (Product p in Model.popularProduct)
+                    {
+                        @Html.Partial("AllProducts", p)
+                    }
+                }
+            </div>
+            </div>
+        </div>
+    

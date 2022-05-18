@@ -1,20 +1,55 @@
 ﻿<Properties StartupConfiguration="{51D80A9C-430A-4932-93DD-28CDBDCB5D20}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="jeweleryShop/Data/Mocks/MockProducts.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="jeweleryShop/Controllers/CartController.cs">
     <Files>
-      <File FileName="jeweleryShop/Startup.cs" Line="53" Column="34" />
-      <File FileName="jeweleryShop/Data/DBObjects.cs" Line="24" Column="1" />
-      <File FileName="jeweleryShop/Data/Mocks/MockCategory.cs" Line="19" Column="99" />
-      <File FileName="jeweleryShop/Data/Mocks/MockProducts.cs" Line="88" Column="68" />
+      <File FileName="jeweleryShop/Data/Models/CartItem.cs" Line="18" Column="1" />
+      <File FileName="jeweleryShop/Data/AppDBContent.cs" Line="19" Column="9" />
+      <File FileName="jeweleryShop/Data/Models/ShopCart.cs" Line="39" Column="40" />
+      <File FileName="jeweleryShop/Data/Repository/ProductRepository.cs" Line="17" Column="10" />
+      <File FileName="jeweleryShop/Startup.cs" Line="39" Column="67" />
+      <File FileName="jeweleryShop/Controllers/CartController.cs" Line="41" Column="14" />
+      <File FileName="jeweleryShop/ViewModels/ShopCartViewModel.cs" Line="10" Column="9" />
+      <File FileName="jeweleryShop/Views/Cart/Index.cshtml" Line="13" Column="7" />
+      <File FileName="jeweleryShop/Data/DBObjects.cs" Line="19" Column="1" />
+      <File FileName="jeweleryShop/Program.cs" Line="16" Column="1" />
+      <File FileName="jeweleryShop/Data/Models/Product.cs" Line="1" Column="1" />
+      <File FileName="jeweleryShop/Data/Models/Category.cs" Line="1" Column="1" />
+      <File FileName="jeweleryShop/Migrations/AppDBContentModelSnapshot.cs" Line="1" Column="1" />
+      <File FileName="jeweleryShop/Migrations/20220518134142_cart.cs" Line="22" Column="21" />
+      <File FileName="jeweleryShop/Migrations/20220517155028_init.cs" Line="1" Column="1" />
+      <File FileName="jeweleryShop/Controllers/HomeController.cs" Line="15" Column="9" />
+      <File FileName="jeweleryShop/Data/Models/Order.cs" Line="37" Column="1" />
+      <File FileName="jeweleryShop/Data/Models/OrderDetail.cs" Line="14" Column="1" />
+      <File FileName="jeweleryShop/Migrations/20220518155813_ord.cs" Line="47" Column="21" />
+      <File FileName="jeweleryShop/Data/Interfaces/IAllOrders.cs" Line="8" Column="39" />
+      <File FileName="jeweleryShop/Data/Repository/OrdersRepository.cs" Line="38" Column="1" />
+      <File FileName="jeweleryShop/Controllers/OrderController.cs" Line="41" Column="1" />
+      <File FileName="jeweleryShop/Views/_ViewImports.cshtml" Line="1" Column="2" />
+      <File FileName="jeweleryShop/Views/Order/Index.cshtml" Line="2" Column="1" />
+      <File FileName="jeweleryShop/Views/Shared/AllProducts.cshtml" Line="12" Column="88" />
+      <File FileName="jeweleryShop/Views/Order/Complete.cshtml" Line="1" Column="25" />
+      <File FileName="jeweleryShop/Controllers/ProductsController.cs" Line="1" Column="1" />
+      <File FileName="jeweleryShop/Views/Shared/_Layout.cshtml" Line="35" Column="72" />
+      <File FileName="jeweleryShop/Views/Products/Catalog.cshtml" Line="9" Column="43" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="jeweleryShop" expanded="True">
             <Node name="jeweleryShop" expanded="True">
+              <Node name="Controllers" expanded="True">
+                <Node name="CartController.cs" selected="True" />
+              </Node>
               <Node name="Data" expanded="True">
-                <Node name="Mocks" expanded="True">
-                  <Node name="MockProducts.cs" selected="True" />
-                </Node>
+                <Node name="Interfaces" expanded="True" />
+                <Node name="Models" expanded="True" />
+                <Node name="Repository" expanded="True" />
+              </Node>
+              <Node name="Migrations" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Cart" expanded="True" />
+                <Node name="Order" expanded="True" />
+                <Node name="Products" expanded="True" />
+                <Node name="Shared" expanded="True" />
               </Node>
             </Node>
           </Node>

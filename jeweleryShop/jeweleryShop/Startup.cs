@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using jeweleryShop.Data;
 using jeweleryShop.Data.Interfaces;
 using jeweleryShop.Data.Mocks;
+using jeweleryShop.Data.Models;
 using jeweleryShop.Data.Repository;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -35,11 +36,17 @@ namespace jeweleryShop
             services.AddDbContext<AppDBContent>(options => options.UseSqlServer(_confString.GetConnectionString("DefaultConnection")));
             services.AddTransient<IProducts, ProductRepository>();
             services.AddTransient<ICategory, CategoryRepository>();
+            services.AddTransient<IAllOrders, OrdersRepository>();
+
+            services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+            services.AddScoped(sp => ShopCart.GetCart(sp));
+
             services.AddMvc(mvcOtions => {
                 mvcOtions.EnableEndpointRouting = false;
             });
 
-
+            services.AddMemoryCache();
+            services.AddSession();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -48,8 +55,14 @@ namespace jeweleryShop
             app.UseDeveloperExceptionPage();
             app.UseStatusCodePages();
             app.UseStaticFiles();
-            app.UseMvcWithDefaultRoute();
-
+            app.UseSession();
+            //app.UseMvcWithDefaultRoute();
+            app.UseMvc(routes =>
+            {
+                routes.MapRoute(name: "default", template: "{controller=Home}/{ action=Index}/{id?}");
+                routes.MapRoute(name: "categoryFilter", template: "Products/{action}/{category?}", defaults: new { Controller = "Products", action="Catalog"});
+                //routes.MapRoute(name: "CategoryFilter", template: "{controller=Products}/{action}/{category?}"); //, defaults: new { Controller = "Cars", action = "List" }
+            });
           
             using (var scope = app.ApplicationServices.CreateScope())
             {
